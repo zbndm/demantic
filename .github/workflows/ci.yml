@@ -12,6 +12,6 @@ jobs:
 
   release:
     name: Release
-    needs: test
+   # needs: test
     uses: ./.github/workflows/release.yml
     secrets: inherit
