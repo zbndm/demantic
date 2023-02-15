@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  test:
+    name: Test
+    uses: ./.github/workflows/test.yml
+
+  release:
+    name: Release
+    needs: test
+    uses: ./.github/workflows/release.yml
+    secrets: inherit
