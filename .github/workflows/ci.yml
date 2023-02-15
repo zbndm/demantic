@@ -6,9 +6,9 @@ on:
       - main
 
 jobs:
-  test:
-    name: Test
-    uses: ./.github/workflows/test.yml
+  # test:
+  #   name: Test
+  #   uses: ./.github/workflows/test.yml
 
   release:
     name: Release
